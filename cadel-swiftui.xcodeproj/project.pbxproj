@@ -19,6 +19,7 @@
 		FB11369B297E05BD00111694 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369A297E05BD00111694 /* Global.swift */; };
 		FB11369D297E357600111694 /* KeycapsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369C297E357600111694 /* KeycapsButton.swift */; };
 		FB11369F297E377600111694 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369E297E377600111694 /* KeyboardView.swift */; };
+		FB1136A2297EFAF300111694 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A1297EFAF300111694 /* Shake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FB11369A297E05BD00111694 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		FB11369C297E357600111694 /* KeycapsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapsButton.swift; sourceTree = "<group>"; };
 		FB11369E297E377600111694 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		FB1136A1297EFAF300111694 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				FB11368C297DF75C00111694 /* Launch Screen.storyboard */,
 				FB11367E297DF5D000111694 /* cadel_swiftuiApp.swift */,
 				FB113682297DF5D100111694 /* Assets.xcassets */,
+				FB1136A0297EFAE900111694 /* Animations */,
 				FB11368E297DFCD300111694 /* Extensions */,
 				FB113692297E002C00111694 /* Models */,
 				FB113684297DF5D100111694 /* Preview Content */,
@@ -121,6 +124,14 @@
 				FB113698297E04BA00111694 /* CadelViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FB1136A0297EFAE900111694 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				FB1136A1297EFAF300111694 /* Shake.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				FB11369F297E377600111694 /* KeyboardView.swift in Sources */,
 				FB113694297E004300111694 /* Guess.swift in Sources */,
 				FB11367F297DF5D000111694 /* cadel_swiftuiApp.swift in Sources */,
+				FB1136A2297EFAF300111694 /* Shake.swift in Sources */,
 				FB113690297DFCE700111694 /* Color+Ext.swift in Sources */,
 				FB11369B297E05BD00111694 /* Global.swift in Sources */,
 				FB11369D297E357600111694 /* KeycapsButton.swift in Sources */,

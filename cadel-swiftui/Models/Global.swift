@@ -44,4 +44,6 @@ enum Global {
             return CGFloat(1.6)
         }
     }
+    
+    static let commonsWord = ["CADEL", "LIPAN", "MAKAN"]
 }
