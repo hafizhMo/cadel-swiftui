@@ -8,19 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		FB11367F297DF5D000111694 /* cadel_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11367E297DF5D000111694 /* cadel_swiftuiApp.swift */; };
-		FB113681297DF5D000111694 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB113680297DF5D000111694 /* ContentView.swift */; };
+		FB113681297DF5D000111694 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB113680297DF5D000111694 /* GameView.swift */; };
 		FB113683297DF5D100111694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB113682297DF5D100111694 /* Assets.xcassets */; };
 		FB113686297DF5D100111694 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB113685297DF5D100111694 /* Preview Assets.xcassets */; };
 		FB11368D297DF75C00111694 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB11368C297DF75C00111694 /* Launch Screen.storyboard */; };
+		FB113690297DFCE700111694 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11368F297DFCE700111694 /* Color+Ext.swift */; };
+		FB113694297E004300111694 /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB113693297E004300111694 /* Guess.swift */; };
+		FB113696297E00EE00111694 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB113695297E00EE00111694 /* GuessView.swift */; };
+		FB113699297E04BA00111694 /* CadelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB113698297E04BA00111694 /* CadelViewModel.swift */; };
+		FB11369B297E05BD00111694 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369A297E05BD00111694 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB11367B297DF5D000111694 /* cadel-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cadel-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB11367E297DF5D000111694 /* cadel_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cadel_swiftuiApp.swift; sourceTree = "<group>"; };
-		FB113680297DF5D000111694 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB113680297DF5D000111694 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		FB113682297DF5D100111694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB113685297DF5D100111694 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB11368C297DF75C00111694 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FB11368F297DFCE700111694 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		FB113693297E004300111694 /* Guess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess.swift; sourceTree = "<group>"; };
+		FB113695297E00EE00111694 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
+		FB113698297E04BA00111694 /* CadelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadelViewModel.swift; sourceTree = "<group>"; };
+		FB11369A297E05BD00111694 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +63,14 @@
 		FB11367D297DF5D000111694 /* cadel-swiftui */ = {
 			isa = PBXGroup;
 			children = (
-				FB113682297DF5D100111694 /* Assets.xcassets */,
-				FB11367E297DF5D000111694 /* cadel_swiftuiApp.swift */,
-				FB113680297DF5D000111694 /* ContentView.swift */,
 				FB11368C297DF75C00111694 /* Launch Screen.storyboard */,
+				FB11367E297DF5D000111694 /* cadel_swiftuiApp.swift */,
+				FB113682297DF5D100111694 /* Assets.xcassets */,
+				FB11368E297DFCD300111694 /* Extensions */,
+				FB113692297E002C00111694 /* Models */,
 				FB113684297DF5D100111694 /* Preview Content */,
+				FB113697297E04AA00111694 /* ViewModels */,
+				FB113691297E002600111694 /* Views */,
 			);
 			path = "cadel-swiftui";
 			sourceTree = "<group>";
@@ -68,6 +81,40 @@
 				FB113685297DF5D100111694 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB11368E297DFCD300111694 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB11368F297DFCE700111694 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FB113691297E002600111694 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB113680297DF5D000111694 /* GameView.swift */,
+				FB113695297E00EE00111694 /* GuessView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB113692297E002C00111694 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB113693297E004300111694 /* Guess.swift */,
+				FB11369A297E05BD00111694 /* Global.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB113697297E04AA00111694 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB113698297E04BA00111694 /* CadelViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB113681297DF5D000111694 /* ContentView.swift in Sources */,
+				FB113681297DF5D000111694 /* GameView.swift in Sources */,
+				FB113696297E00EE00111694 /* GuessView.swift in Sources */,
+				FB113699297E04BA00111694 /* CadelViewModel.swift in Sources */,
+				FB113694297E004300111694 /* Guess.swift in Sources */,
 				FB11367F297DF5D000111694 /* cadel_swiftuiApp.swift in Sources */,
+				FB113690297DFCE700111694 /* Color+Ext.swift in Sources */,
+				FB11369B297E05BD00111694 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

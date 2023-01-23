@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct cadel_swiftuiApp: App {
+    @StateObject var dm = CadelViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView()
+                .environmentObject(dm)
         }
     }
 }
