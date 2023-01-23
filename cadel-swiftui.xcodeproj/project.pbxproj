@@ -17,6 +17,8 @@
 		FB113696297E00EE00111694 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB113695297E00EE00111694 /* GuessView.swift */; };
 		FB113699297E04BA00111694 /* CadelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB113698297E04BA00111694 /* CadelViewModel.swift */; };
 		FB11369B297E05BD00111694 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369A297E05BD00111694 /* Global.swift */; };
+		FB11369D297E357600111694 /* KeycapsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369C297E357600111694 /* KeycapsButton.swift */; };
+		FB11369F297E377600111694 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369E297E377600111694 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		FB113695297E00EE00111694 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		FB113698297E04BA00111694 /* CadelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadelViewModel.swift; sourceTree = "<group>"; };
 		FB11369A297E05BD00111694 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		FB11369C297E357600111694 /* KeycapsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapsButton.swift; sourceTree = "<group>"; };
+		FB11369E297E377600111694 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				FB113680297DF5D000111694 /* GameView.swift */,
 				FB113695297E00EE00111694 /* GuessView.swift */,
+				FB11369C297E357600111694 /* KeycapsButton.swift */,
+				FB11369E297E377600111694 /* KeyboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,10 +197,12 @@
 				FB113681297DF5D000111694 /* GameView.swift in Sources */,
 				FB113696297E00EE00111694 /* GuessView.swift in Sources */,
 				FB113699297E04BA00111694 /* CadelViewModel.swift in Sources */,
+				FB11369F297E377600111694 /* KeyboardView.swift in Sources */,
 				FB113694297E004300111694 /* Guess.swift in Sources */,
 				FB11367F297DF5D000111694 /* cadel_swiftuiApp.swift in Sources */,
 				FB113690297DFCE700111694 /* Color+Ext.swift in Sources */,
 				FB11369B297E05BD00111694 /* Global.swift in Sources */,
+				FB11369D297E357600111694 /* KeycapsButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
