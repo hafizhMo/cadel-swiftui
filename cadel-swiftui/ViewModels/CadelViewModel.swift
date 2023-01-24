@@ -67,6 +67,7 @@ class CadelViewModel: ObservableObject {
                 print("word temp: Valid!")
                 setCurrentGuessColor()
                 tryIndex += 1
+                currentWord = ""
                 if tryIndex == 6 {
                     gameOver = true
                     inPlay = false
