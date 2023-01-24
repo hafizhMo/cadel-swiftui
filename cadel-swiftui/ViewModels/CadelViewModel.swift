@@ -86,6 +86,7 @@ class CadelViewModel: ObservableObject {
                     currentStat.update(win: false)
                     gameOver = true
                     inPlay = false
+                    showToast(with: "Silahkan coba lagi!")
                 }
             } else {
                 withAnimation {
