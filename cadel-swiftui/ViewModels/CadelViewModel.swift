@@ -11,6 +11,7 @@ class CadelViewModel: ObservableObject {
     @Published var guesses: [Guess] = []
     @Published var incorrectAttempts = [Int](repeating: 0, count: 6)
     @Published var toastText: String?
+    @Published var showStats = false
     
     var keyColors = [String : Color]()
     var matchedLetters = [String]()
@@ -20,6 +21,7 @@ class CadelViewModel: ObservableObject {
     var tryIndex = 0
     var inPlay = false
     var gameOver = false
+    var currentStat: Statistic
     var toastWords = ["Ampun bang jago!", "Anjay!", "Keren!!!", "Lumayan juga~", "Cukup baik", "Nyaris men.."]
     
     var gameStarted: Bool {
@@ -31,6 +33,7 @@ class CadelViewModel: ObservableObject {
     }
     
     init() {
+        currentStat = Statistic.loadStat()
         newGame()
     }
     
@@ -70,6 +73,7 @@ class CadelViewModel: ObservableObject {
             gameOver = true
             print("You Win!")
             setCurrentGuessColor()
+            currentStat.update(win: true, index: tryIndex)
             showToast(with: toastWords[tryIndex])
             inPlay = false
         } else {
@@ -79,9 +83,9 @@ class CadelViewModel: ObservableObject {
                 tryIndex += 1
                 currentWord = ""
                 if tryIndex == 6 {
+                    currentStat.update(win: false)
                     gameOver = true
                     inPlay = false
-                    print("You Lose!")
                 }
             } else {
                 withAnimation {
@@ -165,8 +169,13 @@ class CadelViewModel: ObservableObject {
         withAnimation {
             toastText = text
         }
-        withAnimation(Animation.linear(duration: 0.2).delay(2)) {
+        withAnimation(Animation.linear(duration: 0.2).delay(1.5)) {
             toastText = nil
+            if gameOver {
+                withAnimation(Animation.linear(duration: 0.2).delay(2)) {
+                    showStats.toggle()
+                }
+            }
         }
     }
 }

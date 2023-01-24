@@ -22,6 +22,8 @@
 		FB1136A2297EFAF300111694 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A1297EFAF300111694 /* Shake.swift */; };
 		FB1136A4297F8A2100111694 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A3297F8A2100111694 /* FlipView.swift */; };
 		FB1136A6297F908F00111694 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A5297F908F00111694 /* ToastView.swift */; };
+		FB1136A8297F94F200111694 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A7297F94F200111694 /* Statistic.swift */; };
+		FB1136AA297F961B00111694 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A9297F961B00111694 /* StatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		FB1136A1297EFAF300111694 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		FB1136A3297F8A2100111694 /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
 		FB1136A5297F908F00111694 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		FB1136A7297F94F200111694 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		FB1136A9297F961B00111694 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				FB11369C297E357600111694 /* KeycapsButton.swift */,
 				FB11369E297E377600111694 /* KeyboardView.swift */,
 				FB1136A5297F908F00111694 /* ToastView.swift */,
+				FB1136A9297F961B00111694 /* StatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			children = (
 				FB113693297E004300111694 /* Guess.swift */,
 				FB11369A297E05BD00111694 /* Global.swift */,
+				FB1136A7297F94F200111694 /* Statistic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +229,8 @@
 				FB113690297DFCE700111694 /* Color+Ext.swift in Sources */,
 				FB11369B297E05BD00111694 /* Global.swift in Sources */,
 				FB11369D297E357600111694 /* KeycapsButton.swift in Sources */,
+				FB1136AA297F961B00111694 /* StatsView.swift in Sources */,
+				FB1136A8297F94F200111694 /* Statistic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
