@@ -16,6 +16,7 @@ class CadelViewModel: ObservableObject {
     var currentWord = ""
     var tryIndex = 0
     var inPlay = false
+    var gameOver = false
     
     var gameStarted: Bool {
         !currentWord.isEmpty || tryIndex > 0
@@ -56,13 +57,27 @@ class CadelViewModel: ObservableObject {
     }
     
     func enterWord() {
-        if verifyWord() {
-            print("word temp: Valid!")
+        if currentWord == selectedWord {
+            gameOver = true
+            print("You Win!")
+            setCurrentGuessColor()
+            inPlay = false
         } else {
-            withAnimation {
-                self.incorrectAttempts[tryIndex] += 1
+            if verifyWord() {
+                print("word temp: Valid!")
+                setCurrentGuessColor()
+                tryIndex += 1
+                if tryIndex == 6 {
+                    gameOver = true
+                    inPlay = false
+                    print("You Lose!")
+                }
+            } else {
+                withAnimation {
+                    self.incorrectAttempts[tryIndex] += 1
+                }
+                incorrectAttempts[tryIndex] = 0
             }
-            incorrectAttempts[tryIndex] = 0
         }
     }
     
@@ -78,5 +93,33 @@ class CadelViewModel: ObservableObject {
     
     func verifyWord() -> Bool {
         UIReferenceLibraryViewController.dictionaryHasDefinition(forTerm: currentWord)
+    }
+    
+    func setCurrentGuessColor() {
+        let correctLetters = selectedWord.map { String($0) }
+        var frequency = [String : Int]()
+        for letter in correctLetters {
+            frequency[letter, default: 0] += 1
+        }
+        
+        for index in 0...4 {
+            let correctLetter = correctLetters[index]
+            let guessLetter = guesses[tryIndex].guessLetter[index]
+            if guessLetter == correctLetter {
+                guesses[tryIndex].bgColors[index] = .correct
+                frequency[guessLetter]! -= 1
+            }
+        }
+        
+        for index in 0...4 {
+            let guessLetter = guesses[tryIndex].guessLetter[index]
+            if correctLetters.contains(guessLetter) && guesses[tryIndex].bgColors[index] != .correct && frequency[guessLetter]! > 0 {
+                guesses[tryIndex].bgColors[index] = .misplaced
+                frequency[guessLetter]! -= 1
+            }
+        }
+        
+        print(selectedWord)
+        print(guesses[tryIndex].word)
     }
 }
