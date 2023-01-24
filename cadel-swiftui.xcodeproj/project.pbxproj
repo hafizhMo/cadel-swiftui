@@ -20,6 +20,7 @@
 		FB11369D297E357600111694 /* KeycapsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369C297E357600111694 /* KeycapsButton.swift */; };
 		FB11369F297E377600111694 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369E297E377600111694 /* KeyboardView.swift */; };
 		FB1136A2297EFAF300111694 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A1297EFAF300111694 /* Shake.swift */; };
+		FB1136A4297F8A2100111694 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A3297F8A2100111694 /* FlipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FB11369C297E357600111694 /* KeycapsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapsButton.swift; sourceTree = "<group>"; };
 		FB11369E297E377600111694 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		FB1136A1297EFAF300111694 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		FB1136A3297F8A2100111694 /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				FB1136A1297EFAF300111694 /* Shake.swift */,
+				FB1136A3297F8A2100111694 /* FlipView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				FB113681297DF5D000111694 /* GameView.swift in Sources */,
 				FB113696297E00EE00111694 /* GuessView.swift in Sources */,
 				FB113699297E04BA00111694 /* CadelViewModel.swift in Sources */,
+				FB1136A4297F8A2100111694 /* FlipView.swift in Sources */,
 				FB11369F297E377600111694 /* KeyboardView.swift in Sources */,
 				FB113694297E004300111694 /* Guess.swift in Sources */,
 				FB11367F297DF5D000111694 /* cadel_swiftuiApp.swift in Sources */,

@@ -36,6 +36,9 @@ class CadelViewModel: ObservableObject {
         selectedWord = Global.commonsWord.randomElement()!
         currentWord = ""
         inPlay = true
+        tryIndex = 0
+        gameOver = false
+        print(selectedWord)
     }
     
     func populateDefaults() {
@@ -120,7 +123,20 @@ class CadelViewModel: ObservableObject {
             }
         }
         
-        print(selectedWord)
-        print(guesses[tryIndex].word)
+        for index in 0...4 {
+            let guessLetter = guesses[tryIndex].guessLetter[index]
+            if keyColors[guessLetter] != .correct && keyColors[guessLetter] != .misplaced {
+                keyColors[guessLetter] = .wrong
+            }
+        }
+        flipCards(for: tryIndex)
+    }
+    
+    func flipCards(for row: Int) {
+        for col in 0...4 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(col) * 0.2) {
+                self.guesses[row].cardFlipped[col].toggle()
+            }
+        }
     }
 }
