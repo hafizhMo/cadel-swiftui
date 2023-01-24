@@ -21,6 +21,7 @@
 		FB11369F297E377600111694 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11369E297E377600111694 /* KeyboardView.swift */; };
 		FB1136A2297EFAF300111694 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A1297EFAF300111694 /* Shake.swift */; };
 		FB1136A4297F8A2100111694 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A3297F8A2100111694 /* FlipView.swift */; };
+		FB1136A6297F908F00111694 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A5297F908F00111694 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		FB11369E297E377600111694 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		FB1136A1297EFAF300111694 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		FB1136A3297F8A2100111694 /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		FB1136A5297F908F00111694 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				FB113695297E00EE00111694 /* GuessView.swift */,
 				FB11369C297E357600111694 /* KeycapsButton.swift */,
 				FB11369E297E377600111694 /* KeyboardView.swift */,
+				FB1136A5297F908F00111694 /* ToastView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				FB113696297E00EE00111694 /* GuessView.swift in Sources */,
 				FB113699297E04BA00111694 /* CadelViewModel.swift in Sources */,
 				FB1136A4297F8A2100111694 /* FlipView.swift in Sources */,
+				FB1136A6297F908F00111694 /* ToastView.swift in Sources */,
 				FB11369F297E377600111694 /* KeyboardView.swift in Sources */,
 				FB113694297E004300111694 /* Guess.swift in Sources */,
 				FB11367F297DF5D000111694 /* cadel_swiftuiApp.swift in Sources */,

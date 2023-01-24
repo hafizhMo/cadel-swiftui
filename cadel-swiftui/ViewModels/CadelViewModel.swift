@@ -10,6 +10,7 @@ import SwiftUI
 class CadelViewModel: ObservableObject {
     @Published var guesses: [Guess] = []
     @Published var incorrectAttempts = [Int](repeating: 0, count: 6)
+    @Published var toastText: String?
     
     var keyColors = [String : Color]()
     var matchedLetters = [String]()
@@ -19,6 +20,7 @@ class CadelViewModel: ObservableObject {
     var tryIndex = 0
     var inPlay = false
     var gameOver = false
+    var toastWords = ["Ampun bang jago!", "Anjay!", "Keren!!!", "Lumayan juga~", "Cukup baik", "Nyaris men.."]
     
     var gameStarted: Bool {
         !currentWord.isEmpty || tryIndex > 0
@@ -68,6 +70,7 @@ class CadelViewModel: ObservableObject {
             gameOver = true
             print("You Win!")
             setCurrentGuessColor()
+            showToast(with: toastWords[tryIndex])
             inPlay = false
         } else {
             if verifyWord() {
@@ -84,6 +87,7 @@ class CadelViewModel: ObservableObject {
                 withAnimation {
                     self.incorrectAttempts[tryIndex] += 1
                 }
+                showToast(with: "Apaan tuh?")
                 incorrectAttempts[tryIndex] = 0
             }
         }
@@ -154,6 +158,15 @@ class CadelViewModel: ObservableObject {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(col) * 0.2) {
                 self.guesses[row].cardFlipped[col].toggle()
             }
+        }
+    }
+    
+    func showToast(with text: String?) {
+        withAnimation {
+            toastText = text
+        }
+        withAnimation(Animation.linear(duration: 0.2).delay(2)) {
+            toastText = nil
         }
     }
 }
