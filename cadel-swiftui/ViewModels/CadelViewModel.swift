@@ -179,4 +179,22 @@ class CadelViewModel: ObservableObject {
             }
         }
     }
+    
+    func shareResult() {
+        let stat = Statistic.loadStat()
+        let resultString = "Cadel \(stat.games) \(tryIndex < 6 ? "\(tryIndex + 1)/6" : "")\n\(guesses.filter{$0.index <= tryIndex}.compactMap{ $0.results }.joined(separator: "\n"))"
+        print(resultString)
+        
+        let activityController = UIActivityViewController(activityItems: [resultString], applicationActivities: nil)
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            UIWindow.key?.rootViewController!.present(activityController, animated: true)
+        case .pad:
+            activityController.popoverPresentationController?.sourceView = UIWindow.key
+            activityController.popoverPresentationController?.sourceRect = CGRect(x: Global.screenWidth / 2, y: Global.screenHeight / 2, width: 200, height: 200)
+            UIWindow.key?.rootViewController!.present(activityController, animated: true)
+        default:
+            break
+        }
+    }
 }

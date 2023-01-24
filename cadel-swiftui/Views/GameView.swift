@@ -29,6 +29,7 @@ struct GameView: View {
                 }
                 .disabled(dm.showStats)
                 .navigationBarTitleDisplayMode(.inline)
+                .disabled(dm.showStats)
                 .overlay(alignment: .top, content: {
                     if let toastText = dm.toastText {
                         ToastView(toastText: toastText)
