@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     @EnvironmentObject var dm: CadelViewModel
+    @State private var showHelp = false
     var body: some View {
         ZStack {
             NavigationStack {
@@ -39,7 +40,7 @@ struct GameView: View {
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button {
-                            
+                            showHelp.toggle()
                         } label: {
                             Image(systemName: "questionmark.circle")
                         }
@@ -54,6 +55,7 @@ struct GameView: View {
                         HStack {
                             Button {
                                 withAnimation {
+                                    dm.currentStat = Statistic.loadStat()
                                     dm.showStats.toggle()
                                 }
                             } label: {
@@ -72,6 +74,9 @@ struct GameView: View {
             if dm.showStats {
                 StatsView()
             }
+        }
+        .sheet(isPresented: $showHelp) {
+            HelpView()
         }
     }
 }

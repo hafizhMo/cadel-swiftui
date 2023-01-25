@@ -25,6 +25,7 @@
 		FB1136A8297F94F200111694 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A7297F94F200111694 /* Statistic.swift */; };
 		FB1136AA297F961B00111694 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136A9297F961B00111694 /* StatsView.swift */; };
 		FB1136AC2980408000111694 /* UIWindow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1136AB2980408000111694 /* UIWindow+Ext.swift */; };
+		FBFE45952981854D00D32058 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE45942981854D00D32058 /* HelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		FB1136A7297F94F200111694 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		FB1136A9297F961B00111694 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		FB1136AB2980408000111694 /* UIWindow+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ext.swift"; sourceTree = "<group>"; };
+		FBFE45942981854D00D32058 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				FB11369E297E377600111694 /* KeyboardView.swift */,
 				FB1136A5297F908F00111694 /* ToastView.swift */,
 				FB1136A9297F961B00111694 /* StatsView.swift */,
+				FBFE45942981854D00D32058 /* HelpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				FB113690297DFCE700111694 /* Color+Ext.swift in Sources */,
 				FB11369B297E05BD00111694 /* Global.swift in Sources */,
 				FB11369D297E357600111694 /* KeycapsButton.swift in Sources */,
+				FBFE45952981854D00D32058 /* HelpView.swift in Sources */,
 				FB1136AA297F961B00111694 /* StatsView.swift in Sources */,
 				FB1136A8297F94F200111694 /* Statistic.swift in Sources */,
 			);
